@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jobcard/ui/home/home_sceen.dart';
 import 'package:jobcard/ui/account/login_screen.dart';
 import 'package:jobcard/ui/account/register_screen.dart';
+import 'package:jobcard/ui/home/job_card_screen.dart';
 import 'package:jobcard/ui/splash/splash_screen.dart';
 
 void main() => runApp(
@@ -17,6 +18,7 @@ void main() => runApp(
         '/loginScreen': (BuildContext context) => new LoginScreen(),
         '/RegisterScreen': (BuildContext context) => new RegisterScreen(),
         '/HomeScreen': (BuildContext context) => new HomeScreen(),
+        '/JobCardScreen': (BuildContext context) => new JobCardScreen(),
       },
     )
 );

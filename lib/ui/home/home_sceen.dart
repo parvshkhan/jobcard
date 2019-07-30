@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobcard/ui/home/job_card_screen.dart';
 import 'package:jobcard/ui/utils/app_constants.dart';
 class HomeScreen extends StatefulWidget{
 
@@ -55,7 +56,7 @@ class HomeState extends State<HomeScreen>{
       GestureDetector(
 
         onTap: () {
-          showInSnackBar("Under development");
+
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -98,7 +99,7 @@ class HomeState extends State<HomeScreen>{
       GestureDetector(
 
         onTap: () {
-          showInSnackBar("Under development");
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>JobCardScreen()));
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
